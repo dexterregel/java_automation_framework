@@ -14,4 +14,6 @@ run everything with:
 	java -cp framework\selenium-java-4.0.0-alpha-7;framework\selenium-java-4.0.0-alpha-7\lib;pages;tests\ui_tests; AutomationFramework
 
 
-
+conventions
+	all tests are classes
+	each test class' steps should be in a method named runTest
