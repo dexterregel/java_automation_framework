@@ -8,12 +8,18 @@ setup environment variables
 add necessary drivers
 	https://www.selenium.dev/documentation/en/webdriver/driver_requirements/
 
-compile everything with:
+compile everything with (must be updated as new files are added):
 	javac -cp "framework\selenium-java-4.0.0-alpha-7\*;framework\selenium-java-4.0.0-alpha-7\lib\*" AutomationFramework.java pages\Amazon_pages.java tests\ui_tests\Amazon_ui_tests.java
-run everything with:
-	java -cp framework\selenium-java-4.0.0-alpha-7;framework\selenium-java-4.0.0-alpha-7\lib;pages;tests\ui_tests; AutomationFramework
+run everything with (must be updated as new files are added):
+	java -cp framework\selenium-java-4.0.0-alpha-7;framework\selenium-java-4.0.0-alpha-7\lib;pages;tests\ui_tests; AutomationFramework testNameHere
 
 
 conventions
 	all tests are classes
 	each test class' steps should be in a method named runTest
+	all page classes should be organized as:
+		class variables
+		instance variables
+		constructors
+		class methods
+		intance methods

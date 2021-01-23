@@ -37,7 +37,6 @@ public class AutomationFramework
 				Object o = c.newInstance();
 				Method m = c.getMethod(methodName);
 				m.invoke(o);
-				
 			}
 			catch (ClassNotFoundException e)
 			{
@@ -54,5 +53,7 @@ public class AutomationFramework
 				System.out.println("Could not run " + test);
 			}
 		}
+		
+		//report statuses of tests that ran
 	}
 }
