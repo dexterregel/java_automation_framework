@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 class BaseTest
 {
-	String testStatus;
+	public static String testStatus;
 	
 	//todo limit the allowed values for result to pass, fail, and notrun
 	public void setTestResult(String result)
@@ -25,7 +25,7 @@ class BaseTest
 
 
 /********************************************************************
-this test is just a dummy test
+this test is just a dummy test to test running multiple tests
 ********************************************************************/
 class AmazonSearch extends BaseTest
 {

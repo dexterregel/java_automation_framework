@@ -23,7 +23,9 @@ class BasePage
 	}
 	
 	
-	//page interactions commmon to most Amazon pages
+	/****************************************************************
+	Page interactions common to most Amazon pages
+	****************************************************************/
 	public void navigateToMainSite()
 	{
 		driver.get(BasePage.baseUrl);
@@ -52,6 +54,10 @@ class AmazonHomePage extends BasePage
 	}
 	
 	
+	/****************************************************************
+	Page interactions
+	****************************************************************/
+	
 	public void enterSearchTerms(String searchTerms)
 	{
 		driver.get(BasePage.baseUrl);
@@ -75,9 +81,9 @@ class AmazonSearchResultsPage extends BasePage
 		super(driver);
 	}
 	
-	//=================
-	//Page interactions
-	//=================
+	/****************************************************************
+	Page interactions
+	****************************************************************/
 	
 	//enters a value in the min price range field
 	public void enterMinPrice(Integer minPrice)
